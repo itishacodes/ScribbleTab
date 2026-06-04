@@ -1,0 +1,286 @@
+/* ==========================================================================
+   ScribbleTab Stylesheet - Deep Isolated Viewport UI Layer
+   ========================================================================== */
+
+#scribbletab-floating-dock {
+  position: fixed !important;
+  top: 24px !important;
+  right: 24px !important;
+  width: 240px !important;
+  background: rgba(15, 23, 42, 0.85) !important; /* Premium Midnight Glass */
+  backdrop-filter: blur(12px) !important; /* Glassmorphism background blur */
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6) !important;
+  z-index: 2147483647 !important; /* Forces layout supremacy above all sites */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif !important;
+  font-size: 13px !important;
+  color: #f1f5f9 !important;
+  user-select: none !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+#scribbletab-floating-dock * {
+  box-sizing: border-box !important;
+}
+
+/* ── Operational Drag Anchor ──────────────────────────────── */
+
+.st-anchor-handle {
+  display: flex !important;
+  align-items: center !important;
+  padding: 10px 14px !important;
+  background: rgba(30, 41, 59, 0.5) !important;
+  cursor: grab !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+  gap: 8px !important;
+}
+
+.st-anchor-handle:active {
+  cursor: grabbing !important;
+}
+
+.st-drag-grip-indicator {
+  font-size: 14px !important;
+  color: #475569 !important;
+  line-height: 1 !important;
+}
+
+.st-dock-header-title {
+  flex: 1 !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  letter-spacing: 0.3px !important;
+  color: #38bdf8 !important; /* Neon Sky Accent */
+  white-space: nowrap !important;
+}
+
+/* Action Control Icons inside Header */
+.st-window-control-trigger {
+  background: none !important;
+  border: none !important;
+  color: #64748b !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  padding: 2px 6px !important;
+  border-radius: 5px !important;
+  line-height: 1 !important;
+  transition: all 0.15s ease-in-out !important;
+  flex-shrink: 0 !important;
+}
+
+.st-window-control-trigger:hover {
+  background: #334155 !important;
+  color: #f8fafc !important;
+}
+
+.st-dismissal-trigger:hover {
+  background: #ef4444 !important;
+  color: #ffffff !important;
+}
+
+/* Collapsed Mini State Properties */
+#scribbletab-floating-dock.st-collapsed-pill {
+  width: fit-content !important;
+  min-width: unset !important;
+}
+
+#scribbletab-floating-dock.st-collapsed-pill .st-anchor-handle {
+  border-bottom: none !important;
+  border-radius: 12px !important;
+}
+
+/* ── Content Row Wrappers ────────────────────────────────── */
+
+.st-panel-segment {
+  padding: 12px 14px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.st-panel-segment:last-child {
+  border-bottom: none !important;
+}
+
+.st-segment-flex-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.st-descriptor-tag {
+  font-size: 10px !important;
+  color: #64748b !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+  min-width: 38px !important;
+  font-weight: 700 !important;
+}
+
+/* ── Vector Tool Matrix ──────────────────────────────────── */
+
+.st-utility-matrix {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 6px !important;
+}
+
+.st-matrix-node-btn {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px 2px !important;
+  background: #1e293b !important;
+  border: 1px solid rgba(255, 255, 255, 0.03) !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  color: #94a3b8 !important;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  gap: 4px !important;
+}
+
+.st-matrix-node-btn:hover {
+  background: #334155 !important;
+  color: #f8fafc !important;
+}
+
+.st-matrix-node-btn.st-node-selected {
+  background: #6366f1 !important; /* Indigo selection block */
+  border-color: #818cf8 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.4) !important;
+}
+
+.st-vector-glyph {
+  font-size: 14px !important;
+  line-height: 1 !important;
+}
+
+.st-vector-label {
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* ── Palette Customization Nodes ─────────────────────────── */
+
+.st-native-color-well {
+  width: 28px !important;
+  height: 28px !important;
+  padding: 0 !important;
+  border: 2px solid #334155 !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  background: none !important;
+  flex-shrink: 0 !important;
+}
+
+.st-preset-track {
+  display: flex !important;
+  gap: 5px !important;
+  flex-wrap: wrap !important;
+  flex: 1 !important;
+}
+
+.st-swatch-bead {
+  width: 18px !important;
+  height: 18px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  padding: 0 !important;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  flex-shrink: 0 !important;
+}
+
+.st-swatch-bead:hover {
+  transform: scale(1.3) !important;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2) !important;
+}
+
+/* ── Stroke Track Linear Input ───────────────────────────── */
+
+.st-slider-input {
+  flex: 1 !important;
+  height: 4px !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  background: #334155 !important;
+  border-radius: 2px !important;
+  outline: none !important;
+  cursor: pointer !important;
+}
+
+.st-slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  width: 14px !important;
+  height: 14px !important;
+  border-radius: 50% !important;
+  background: #6366f1 !important;
+  cursor: pointer !important;
+  border: 2px solid #ffffff !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4) !important;
+}
+
+.st-current-size-log {
+  font-size: 11px !important;
+  color: #94a3b8 !important;
+  min-width: 20px !important;
+  text-align: right !important;
+  font-family: ui-monospace, SFMono-Regular, monospace !important;
+}
+
+/* ── Operational Compilation Actions ──────────────────────── */
+
+.st-action-row-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+}
+
+.st-pipeline-trigger-btn {
+  flex: 1 1 calc(50% - 6px) !important;
+  padding: 8px 4px !important;
+  background: #1e293b !important;
+  border: 1px solid #334155 !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  color: #94a3b8 !important;
+  font-size: 11px !important;
+  font-family: inherit !important;
+  font-weight: 600 !important;
+  transition: all 0.15s ease !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+.st-pipeline-trigger-btn:hover {
+  background: #334155 !important;
+  color: #f8fafc !important;
+}
+
+.st-pipeline-core-action {
+  background: #6366f1 !important;
+  border-color: #818cf8 !important;
+  color: #ffffff !important;
+}
+
+.st-pipeline-core-action:hover {
+  background: #4f46e5 !important;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3) !important;
+}
+
+/* ── Persistent Canvas Layer Target Defenses ────────────── */
+
+#scribbletab-viewport-canvas {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  pointer-events: none !important;
+  z-index: 2147483646 !important;
+  cursor: crosshair !important;
+}

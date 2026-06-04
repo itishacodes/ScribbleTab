@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScribbleTab — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a; /* Slate Midnight Blue matching popup theme */
+      color: #cbd5e1;
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    header {
+      background: #1e293b;
+      border-bottom: 1px solid #334155;
+      padding: 20px 0;
+    }
+
+    header .inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-badge {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #f8fafc;
+      letter-spacing: -0.3px;
+    }
+
+    header span {
+      color: #64748b;
+      font-size: 14px;
+      margin-left: 4px;
+      font-weight: 400;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .hero-banner {
+      margin-bottom: 48px;
+    }
+
+    .hero-banner h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #f8fafc;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+
+    .hero-banner p {
+      color: #94a3b8;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .privacy-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #064e3b;
+      color: #a7f3d0;
+      border: 1px solid #065f46;
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .privacy-badge::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #10b981;
+      display: inline-block;
+    }
+
+    .timestamp-log {
+      font-size: 13px;
+      color: #475569;
+      margin-bottom: 48px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #f8fafc;
+      margin-bottom: 12px;
+      padding-left: 12px;
+      border-left: 3px solid #6366f1; /* Brand Indigo accent bar */
+    }
+
+    p {
+      color: #94a3b8;
+      font-size: 15px;
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    ul li {
+      color: #94a3b8;
+      font-size: 15px;
+      line-height: 1.6;
+      padding-left: 22px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #6366f1;
+      font-weight: 700;
+    }
+
+    .manifest-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    .manifest-table th {
+      text-align: left;
+      padding: 10px 14px;
+      background: #1e293b;
+      color: #64748b;
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border: 1px solid #334155;
+    }
+
+    .manifest-table td {
+      padding: 12px 14px;
+      border: 1px solid #1e293b;
+      color: #94a3b8;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    .manifest-table tr:nth-child(even) td {
+      background: #111827;
+    }
+
+    .manifest-table td:first-child {
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      color: #38bdf8;
+      white-space: nowrap;
+      width: 160px;
+    }
+
+    .summary-callout {
+      background: #0f1e36;
+      border: 1px solid #3b82f6;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-top: 8px;
+    }
+
+    .summary-callout p {
+      margin: 0;
+      color: #93c5fd;
+      font-size: 15px;
+    }
+
+    .summary-callout strong {
+      color: #bfdbfe;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid #1e293b;
+      color: #475569;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #6366f1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .hero-banner h2 { font-size: 26px; }
+      .manifest-table td:first-child { width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <div class="logo-badge">✦</div>
+    <div>
+      <h1>ScribbleTab <span>for Chrome</span></h1>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="hero-banner">
+    <div class="privacy-badge">Zero Data Ingestion</div>
+    <h2>Privacy Policy</h2>
+    <p>
+      ScribbleTab is an on-demand Chrome extension providing an interface to sketch freehand overlays on active websites and snap the resulting visual compilation. This transparency document outlines exactly how data isolation works within the application layers.
+    </p>
+  </div>
+
+  <p class="timestamp-log">Last updated: June 2026</p>
+
+  <section>
+    <h3>Core Commitment</h3>
+    <div class="summary-callout">
+      <p>
+        <strong>ScribbleTab strictly operates on a decentralized, zero-telemetry architecture. The application collects no personal identifiers, logs no browsing records, and features no outbound network transmission layers.</strong> Your interactions remain isolated within your local machine runtime context.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h3>Data Collection Boundaries</h3>
+    <ul>
+      <li>No observation or ingestion of tab URLs or persistent browser behavior.</li>
+      <li>No tracking or parsing of data inside target page documents.</li>
+      <li>No deployment of system performance metrics or session monitoring tags.</li>
+      <li>No local cookie storage allocation or user fingerprint configuration.</li>
+      <li>No external cloud pipeline integration for drawing layers or captured assets.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Extension Permission Disclosures</h3>
+    <p>
+      ScribbleTab enforces a strictly restricted security footprint, requesting solely the fundamental browser access hooks required for basic execution:
+    </p>
+    <table class="manifest-table">
+      <thead>
+        <tr>
+          <th>API Scope</th>
+          <th>Technical Utility</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>activeTab</td>
+          <td>Grants short-term, programmatic access to hook the rendering canvas overlay onto the currently focused document layout upon explicit user invocation.</td>
+        </tr>
+        <tr>
+          <td>tabs</td>
+          <td>Accesses target window identity parameters allowing the background rendering thread to scope capturing bounds specifically to your current active window.</td>
+        </tr>
+        <tr>
+          <td>scripting</td>
+          <td>Permits injection sequencing of local library files across running tabs without forcing manual browser refreshing.</td>
+        </tr>
+        <tr>
+          <td>clipboardWrite</td>
+          <td>Enables writing raw image buffers onto the system-level clipboard layer when the clipboard action is clicked. This API loop is strictly unidirectional; data is never read.</td>
+        </tr>
+        <tr>
+          <td>host_permissions</td>
+          <td>Authorizes canvas mount permissions dynamically across uniform web pages. No contents are processed or stored off-device.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h3>Code Execution Model</h3>
+    <p>
+      The extension operates entirely via statically bundled, local code assets. ScribbleTab completely prohibits remote script loading, runtime string parsing functions like <code style="color:#38bdf8">eval()</code>, or external configuration injections, successfully eliminating classic remote cross-site vector threats.
+    </p>
+  </section>
+
+  <section>
+    <h3>State Lifecycle Management</h3>
+    <p>
+      ScribbleTab features non-persistent, entirely volatile memory operations. Annotations are kept alive directly inside active browser heap space; the application bypasses persistent database engines like <code style="color:#38bdf8">chrome.storage</code>, localStorage, or IndexedDB entirely. Terminating the viewport panel instantly cleans up and frees all canvas assets completely.
+    </p>
+  </section>
+
+  <section>
+    <h3>Third-Party Isolation</h3>
+    <p>
+      There are zero dependencies, software development kits (SDKs), advertising structures, or tracking nodes linked to the application. Data isolation is maintained uniformly against external systems.
+    </p>
+  </section>
+
+  <section>
+    <h3>Regulatory Alignment</h3>
+    <p>
+      By bypassing the creation of user profiles and data records entirely, ScribbleTab maintains direct design compliance with global privacy mandates including COPPA, GDPR, and CCPA standards.
+    </p>
+  </section>
+
+  <section>
+    <h3>Revisions and Modifications</h3>
+    <p>
+      Should this document be adjusted to reflect new local browser workflow options, standard revision logs will note updates openly here. Given our structural zero-data architectural footprint, operational shifts impacting privacy standards are fundamentally highly unlikely.
+    </p>
+  </section>
+
+  <section>
+    <h3>Inquiries</h3>
+    <p>
+      For questions regarding your local execution isolation layer, please communicate directly with the project manager via your repository platform contact points.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>
+    © 2026 ScribbleTab · Built for Secure Screen Intelligence.
+  </p>
+</footer>
+
+</body>
+</html>

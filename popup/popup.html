@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScribbleTab</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 260px;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a; /* Sleek Slate Midnight Blue */
+      color: #f8fafc;
+    }
+
+    .brand-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .brand-icon {
+      font-size: 22px;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #38bdf8; /* Neon Sky Blue accent */
+    }
+
+    p {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    #action-toggle-btn {
+      width: 100%;
+      padding: 12px;
+      background: #6366f1; /* Indigo core action button */
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    #action-toggle-btn:hover {
+      background: #4f46e5;
+      transform: translateY(-1px);
+    }
+
+    #action-toggle-btn:active {
+      background: #4338ca;
+      transform: translateY(0);
+    }
+
+    .shortcut-panel {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid #1e293b;
+    }
+
+    .panel-title {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #64748b;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .shortcut-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 0;
+      font-size: 11px;
+      color: #94a3b8;
+    }
+
+    kbd {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 10px;
+      color: #cbd5e1;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .key-group {
+      display: flex;
+      gap: 3px;
+    }
+
+    #error-status {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #f87171;
+      text-align: center;
+      min-height: 16px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="brand-header">
+    <span class="brand-icon">✦</span>
+    <h2>ScribbleTab</h2>
+  </div>
+
+  <p>Instantly draw over your active viewport, drop custom elements, and snap clean captures.</p>
+
+  <button id="action-toggle-btn">Launch Workspace</button>
+
+  <div id="error-status"></div>
+
+  <div class="shortcut-panel">
+    <div class="panel-title">Quick Controls</div>
+    <div class="shortcut-item"><span>Toggle Canvas</span><kbd>Alt+Shift+A</kbd></div>
+    <div class="shortcut-item"><span>Undo Stroke</span><kbd>Ctrl+Z</kbd></div>
+    <div class="shortcut-item"><span>Exit Mode</span><kbd>Esc</kbd></div>
+    <div class="shortcut-item">
+      <span>Drawing Tools</span>
+      <div class="key-group">
+        <kbd>F</kbd><kbd>R</kbd><kbd>C</kbd><kbd>A</kbd><kbd>E</kbd>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
