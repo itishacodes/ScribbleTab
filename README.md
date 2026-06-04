@@ -14,7 +14,7 @@ A modern, high-performance Chrome Extension (Manifest V3) that layers an isolate
 
 | Premium Toolbar Interface | Workspace Canvas In Action |
 |---------|------------------|
-| ![[Toolbar Preview](./docs/screenshots/toolbar-preview)](./docs/screenshots/toolbar-preview) | ![[Drawing Preview](./docs/screenshots/drawing-preview)](./docs/screenshots/drawing-preview) |
+| ![[Toolbar Preview](./docs/screenshots/toolbar-preview.png)](./docs/screenshots/toolbar-preview.png) | ![[Drawing Preview](./docs/screenshots/drawing-preview.png)](./docs/screenshots/drawing-preview.png) |
 
 ---
 
