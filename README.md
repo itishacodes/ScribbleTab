@@ -12,12 +12,9 @@ A modern, high-performance Chrome Extension (Manifest V3) that layers an isolate
 
 ## 📸 Screenshots
 
-> _Place your custom dashboard preview snapshots here_
-
 | Premium Toolbar Interface | Workspace Canvas In Action |
 |---------|------------------|
-| ![Toolbar Preview](docs/screenshots/toolbar-preview.png) | ![Drawing Preview](docs/screenshots/drawing-preview.png) |
-
+| ![[Toolbar Preview](./docs/screenshots/toolbar-preview.png)](./docs/screenshots/toolbar-preview.png) | ![[Drawing Preview](./docs/screenshots/drawing-preview.png)](./docs/screenshots/drawing-preview.png) |
 
 ---
 
